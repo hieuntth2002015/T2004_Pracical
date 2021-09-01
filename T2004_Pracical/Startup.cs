@@ -28,6 +28,7 @@ namespace T2004_Pracical
         {
 
             services.AddControllers();
+            services.AddTransient<Models.T2004E_Practical3Context, Models.T2004E_Practical3Context>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "T2004_Pracical", Version = "v1" });
